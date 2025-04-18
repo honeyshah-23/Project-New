@@ -1,0 +1,223 @@
+/* Hero */
+.hero{
+    background-color: #361d4d99;
+}
+.hero-box{
+   display: flex;
+   justify-content: space-between;
+   height: 100vh;
+   align-items: center;
+   margin-left: 67px;
+}
+div .h1{
+    position: relative;
+    transform: transform 3s;
+    animation-name: text;
+}
+@keyframes text{
+    0%{
+        transform: padding-left 10px;
+        
+        opacity: 0;
+    }
+    100%{
+        transform: padding-left 50px;
+        left: 0;
+        opacity: 1;
+    }
+}
+.h-left{
+    width: 45%;
+    color: white;
+}
+.h-left h1 {
+    position: relative;
+    animation: slideDown 5s ease-out forwards;
+}
+.h-left p{
+    position: relative;
+    animation: slider 6s ease-out forwards;
+}
+div .search{
+    position: relative;
+    animation: btn 5s ease-out forwards;
+}
+@keyframes slideDown {
+    0% {
+        left: -50px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes btn {
+    0% {
+        left: -50px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes slider {
+    0% {
+        left: -50px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+.h-right{
+    position: relative;
+    animation: img 5s ease-out forwards;
+}
+@keyframes img {
+    0% {
+        right: -50px;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.h-left p{
+    padding: 1.5rem 0;
+}
+.search{
+   position: relative;
+}
+
+ #g-btn{
+    text-decoration: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 26px;
+    border-radius: 20px;
+    cursor: pointer;
+ }
+.search input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 35px;
+    padding: 0 20px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+.search a{
+    position: absolute;
+    top: 10px;
+    right: -20px;
+}
+
+.h-right{
+    width: 40%;
+
+}
+.h-right img{
+    width: auto;
+    object-fit: cover;
+    border-radius: 30px;
+}
+@media (max-width: 699px){
+    .hero-box {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: auto;
+        align-items: start;
+        padding: 8rem 0;
+    } 
+    .h-left {
+        width: 50%;
+    }
+    .h-right {
+        display:flex;
+    }
+    .search input {
+        
+        height: 3rem;
+        border-radius: 35px;
+        padding: 0 20px;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+    }
+    .search a {
+        position: absolute;
+        top: 10px;
+        
+    }
+    #g-btn {
+        text-decoration: none;
+        background-color: blueviolet;
+        color: white;
+        padding: 5px 26px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .h-left h1 {
+        position: relative;
+        animation: slideDown 5s ease-out forwards;
+    }
+    .h-left p{
+        position: relative;
+        animation: slider 6s ease-out forwards;
+    }
+    div .search{
+        position: relative;
+        animation: btn 5s ease-out forwards;
+    }
+    @keyframes slideDown {
+        0% {
+            top: -50px;
+            opacity: 0;
+        }
+        100% {
+            top: 0;
+            opacity: 1;
+        }
+    }
+    @keyframes btn {
+        0% {
+            top: -50px;
+            opacity: 0;
+        }
+        100% {
+            top: 0;
+            opacity: 1;
+        }
+    }
+    @keyframes slider {
+        0% {
+            top: -50px;
+            opacity: 0;
+        }
+        100% {
+            top: 0;
+            opacity: 1;
+        }
+    }
+    .h-right{
+        position: relative;
+        animation: img 5s ease-out forwards;
+    }
+    @keyframes img {
+        0% {
+            top: -50px;
+            opacity: 0;
+        }
+        100% {
+            top: 0;
+            opacity: 1;
+        }
+    }
+    
+    
+}

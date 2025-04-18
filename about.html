@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="./style4.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        window.onload=function(){
+          const bar =  document.getElementById("bar");
+          const menu = document.getElementById("menu");
+          if(bar){
+            bar.addEventListener("click",()=> {
+                menu.classList.toggle("active");
+            });
+          }
+        }
+    </script>
+    <style>
+        iframe {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding-top: 90px;
+        
+
+        }
+        .iframebox{
+            position: relative;
+            top: 20px;
+            border: 2px solid white;
+            background-color:  rgb(31, 91, 32);
+        }
+        @media(max-width:699px){
+            iframe{
+                width:480px;
+              
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="sticky">
+        <header>
+            <div id="navbar" >
+                <a href="index.html">
+                    <img class="logo"
+                        src="logo.jpeg" height="90px" width="230px"></a>
+
+                <ul style="list-style-type: none;" id="menu" >
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Browse Jobs</a>
+                        <div class="dropdown-box">
+                            <a href="#">Full Time</a><br>
+                            <a href="#">Part Time</a><br>
+                            <a href="#">Remote</a>
+                        </div>
+                    </li>
+                    <li><a href="company.html">Companies</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <a href="form.html"><button id="w-btn">Join</button></a>
+                </ul>
+                <i id="bar" class='bx bx-menu'></i>
+            </div>
+
+        </header>
+
+    </div>
+    <div class="iframebox">
+
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.6547785840125!2d72.54541757386635!3d23.036444415813126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84eb2ad9d19d%3A0xf2b4a864174675d9!2sK.%20S.%20School%20of%20Business%20Management%20%26%20Information%20Technology!5e0!3m2!1sen!2sin!4v1744873684693!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" ></iframe>
+
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <img class="logo" src="logo.jpeg" alt="Logo" width="180px">
+                <p>Your one-stop destination for exploring job opportunities <br>
+                    and hiring the right talent. Start your journey today.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="#">Browse Jobs</a></li>
+                    <li><a href="companys.html">Companies</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="form.html">Join</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@jobportal.com</p>
+                <p>Phone: +91-9876543210</p>
+                <p>Location: Ahmedabad, India</p>
+            </div>
+
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 JobPortal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

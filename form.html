@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./StyleForm.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        window.onload=function(){
+          const bar =  document.getElementById("bar");
+          const menu = document.getElementById("menu");
+          if(bar){
+            bar.addEventListener("click",()=> {
+                menu.classList.toggle("active");
+            });
+          }
+          let form = document.getElementById("sumbitid");
+            form.addEventListener("click", function()
+            {
+                let name=document.getElementById("name").value.trim();
+                 let email=document.getElementById("email").value.trim();
+                 let password=document.getElementById("password").value.trim();
+                 let mobile=document.getElementById("mobile").value.trim();
+               if(name === "" || email === "" || password === "" || mobile === ""){
+                alert("Please Fill the form");
+               }
+               else{
+                alert("Your Response has been submitted");}
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="sticky">
+        <header>
+            <div id="navbar" >
+                <a href="index.html">
+                    <img class="logo"
+                        src="logo.jpeg" height="90px" width="230px"></a>
+
+                <ul style="list-style-type: none;" id="menu" >
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Browse Jobs</a>
+                        <div class="dropdown-box">
+                            <a href="#">Full Time</a><br>
+                            <a href="#">Part Time</a><br>
+                            <a href="#">Remote</a>
+                        </div>
+                    </li>
+                    <li><a href="company.html">Companies</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <a href="form.html"><button id="w-btn">Join</button></a>
+                </ul>
+                <i id="bar" class='bx bx-menu'></i>
+            </div>
+
+        </header>
+
+    </div>
+    <br>
+    <div class="f1">
+         <form>
+            
+             <h1>Create your Naukri profile</h1>
+             Search & apply to jobs from india's No.1 Job site
+             <br><br><b>Full name</b>
+             <br><input type="text" id="name" placeholder="What is your Name?">
+             <br><br>
+             <b>Email ID</b>
+             <br><input type="email"  id="email" placeholder="Tell us your Email ID">
+             <br>We'll send relevant jobs and updates to this email.
+             <br><br>
+             <b>Password</b>
+             <br><input type="password" id="password" placeholder="(minimum 6 characters)">
+             <br><br>
+             <b>Mobile number</b>
+             <br><input type="text" placeholder="Enter your Mobile number" id="mobile">
+             <br>Recruiters will contact you on this number
+             <br><br>
+             <b>Work Status</b><br>
+             <input type="radio" name="work">I'm Experienced
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <br>
+
+             <input type="radio" name="work">I'm a Fresher<br>
+             <br>
+             I have work experience &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             I am a Student/Haven't worked
+             <br>(Excluding Internship)
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;after
+             Graduation
+             <br>
+             <br><br>
+             <input type="file"><br>upload your resume here
+             <br><br>
+             <button type="submit" name="" id="sumbitid">Register</button>
+            
+        </form>
+    
+
+
+    <div class="i1">
+        <img src="formphoto.jpeg" >
+    </div>
+    </div>
+
+
+
+    
+
+</body>
+
+</html>
